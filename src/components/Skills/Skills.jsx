@@ -1,55 +1,57 @@
 import React from "react";
+import style from "./Skills.module.css";
 
 const Skills = () => {
+
 	return (
-		<div class="contenedor-skills" id="skills">
+		<div className={style["contenedor-skills"]} id={style.skills}>
 			<h3>SKILLS</h3>
-			<div class="skill">
-				<div class="info">
+			<div className={style.skill}>
+				<div className={style.info}>
 					<p>
-						<span class="lista"> </span>Html & Css
+						<span className={style.lista}> </span>Html & Css
 					</p>
-					<span class="porcentaje">95%</span>
+					<span className={style.porcentaje}>95%</span>
 				</div>
 
-				<div class="barra">
-					<div class="" id="html"></div>
+				<div className={style.barra}>
+					<div className={style["barra-progreso1"]} id={style.html}></div>
 				</div>
 			</div>
-			<div class="skill">
-				<div class="info">
+			<div className={style.skill}>
+				<div className={style.info}>
 					<p>
-						<span class="lista"> </span>Javascript
+						<span className={style.lista}> </span>Javascript
 					</p>
-					<span class="porcentaje">90%</span>
+					<span className={style.porcentaje}>90%</span>
 				</div>
 
-				<div class="barra">
-					<div class="" id="js"></div>
+				<div className={style.barra}>
+					<div className={style["barra-progreso2"]} id={style.js}></div>
 				</div>
 			</div>
-			<div class="skill">
-				<div class="info">
+			<div className={style.skill}>
+				<div className={style.info}>
 					<p>
-						<span class="lista"> </span>Databases
+						<span className={style.lista}> </span>Databases
 					</p>
-					<span class="porcentaje">90%</span>
+					<span className={style.porcentaje}>90%</span>
 				</div>
 
-				<div class="barra">
-					<div class="" id="bd"></div>
+				<div className={style.barra}>
+					<div className={style["barra-progreso3"]} id={style.bd}></div>
 				</div>
 			</div>
-			<div class="skill">
-				<div class="info">
+			<div className={style.skill}>
+				<div className={style.info}>
 					<p>
-						<span class="lista"> </span>Photoshop
+						<span className={style.lista}> </span>Photoshop
 					</p>
-					<span class="porcentaje">85%</span>
+					<span className={style.porcentaje}>85%</span>
 				</div>
 
-				<div class="barra">
-					<div class="" id="ps"></div>
+				<div className={style.barra}>
+					<div className={style["barra-progreso4"]} id={style.ps}></div>
 				</div>
 			</div>
 		</div>

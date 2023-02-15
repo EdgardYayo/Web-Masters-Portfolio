@@ -1,41 +1,42 @@
 import React from "react";
 import style from "./Landing.module.css";
+// import { seleccionar, responsiveMenu } from "../../utilis/Scrips";
 
 const Landing = () => {
 	return (
 		<section id={style.inicio}>
 			<div className={style.contenido}>
 				<header>
-					<div className={style.contenido_header}>
+					<div className={style["contenido-header"]}>
 						<h1>/TM/</h1>
 						<nav id={style.nav}>
 							<ul id={style.links}>
 								<li>
 									<a
-										href="#inicio"
+										href="/Landing"
 										className={style.seleccionado}
-										onclick="seleccionar(this)"
+										
 									>
 										START
 									</a>
 								</li>
 								<li>
-									<a href="#sobremi" onclick="seleccionar(this)">
+									<a href="/AboutUs">
 										ABOUT US
 									</a>
 								</li>
 								<li>
-									<a href="#servicios" onclick="seleccionar(this)">
+									<a href="/Services">
 										SERVICES
 									</a>
 								</li>
 								<li>
-									<a href="#portfolio" onclick="seleccionar(this)">
+									<a href="/Portfolio">
 										PORTFOLIO
 									</a>
 								</li>
 								<li>
-									<a href="#contacto" onclick="seleccionar(this)">
+									<a href="/Contact" >
 										CONTACT
 									</a>
 								</li>
@@ -44,7 +45,7 @@ const Landing = () => {
 
 						{/*  Icono del menu responsive */}
 
-						<div id={style["icono-nav"]} onclick="responsiveMenu()">
+						<div id={style["icono-nav"]} >
 							<i className="fa-solid fa-bars"></i>
 						</div>
 
