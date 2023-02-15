@@ -1,19 +1,19 @@
 import React from "react";
-import style from "./landing.module.css";
+import style from "./Landing.module.css";
 
 const Landing = () => {
 	return (
-		<section id="inicio">
+		<section id={style.inicio}>
 			<div className={style.contenido}>
 				<header>
 					<div className={style.contenido_header}>
 						<h1>/TM/</h1>
-						<nav id="nav" className="">
-							<ul id="links">
+						<nav id={style.nav}>
+							<ul id={style.links}>
 								<li>
 									<a
 										href="#inicio"
-										className="seleccionado"
+										className={style.seleccionado}
 										onclick="seleccionar(this)"
 									>
 										START
@@ -44,11 +44,11 @@ const Landing = () => {
 
 						{/*  Icono del menu responsive */}
 
-						<div id="icono-nav" onclick="responsiveMenu()">
+						<div id={style["icono-nav"]} onclick="responsiveMenu()">
 							<i className="fa-solid fa-bars"></i>
 						</div>
 
-						<div className="redes">
+						<div className={style.redes}>
 							<a href="#">
 								<i className="fa-brands fa-youtube"></i>
 							</a>
@@ -61,12 +61,12 @@ const Landing = () => {
 						</div>
 					</div>
 				</header>
-				<div className="presentacion">
-					<p className="bienvenida">Welcome</p>
+				<div className={style.presentacion}>
+					<p className={style.bienvenida}>Welcome</p>
 					<h2>
 						We are a <span>Team Of FullStack Developers</span>, TECHMASTERS
 					</h2>
-					<p className="descripcion">
+					<p className={style.descripcion}>
 						"Your partners for a powerful online presence"
 					</p>
 					<a href="#portfolio">Go to Portfolio</a>
