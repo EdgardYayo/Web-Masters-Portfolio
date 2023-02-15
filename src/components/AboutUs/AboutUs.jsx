@@ -1,11 +1,12 @@
 import React from "react";
-import style from "./AboutUs.module.css"
+import style from "./AboutUs.module.css";
+import foto from "../../img/foto.jpg"
 
 const AboutUs = () => {
 	return (
 		<section id={style.sobremi}>
 			<div className={style["contenedor-foto"]}>
-				<img src="" alt="holis" />
+				<img src={foto} alt="holis" />
 			</div>
 			<div className={style.sobremi}>
 				<p className={style["titulo-seccion"]}>About us</p>
