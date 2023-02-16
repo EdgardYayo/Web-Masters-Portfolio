@@ -1,7 +1,7 @@
 import './App.css';
 import Landing from "./components/landing/Landing.jsx"
 import AboutUs from "./components/AboutUs/AboutUs.jsx"
-import Services from "./components/Services/Services.jsx"
+import Services from "./components/services/Services.jsx"
 import Skills   from "./components/Skills/Skills.jsx"
 import Portfolio from "./components/Portfolio/Portfolio.jsx"
 import Contact from "./components/Contact/Contact.jsx"
