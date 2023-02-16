@@ -1,6 +1,5 @@
 
 import React, { useRef } from "react";
-import React from "react";
 import style from "./landing.module.css";
 // import { seleccionar, responsiveMenu } from "../../utilis/Scrips";
 
