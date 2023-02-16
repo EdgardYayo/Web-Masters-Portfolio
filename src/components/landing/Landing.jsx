@@ -33,7 +33,7 @@ const Landing = () => {
 			<div className={style.contenido}>
 				<header>
 					<div className={style["contenido-header"]}>
-						<h1>/TM/</h1>
+						<h1>TSM</h1>
 						<nav id={style.nav}>
 							<ul id={style.links}>
 								<li>
@@ -112,7 +112,7 @@ const Landing = () => {
 				<div className={style.presentacion}>
 					<p className={style.bienvenida}>Welcome</p>
 					<h2>
-						We are a <span>Team Of FullStack Developers</span>, TECHMASTERS
+						We are a <span>Team Of FullStack Developers</span>, TECHSITEMASTERS
 					</h2>
 					<p className={style.descripcion}>
 						"Your partners for a powerful online presence"

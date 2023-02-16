@@ -11,15 +11,15 @@ const AboutUs = () => {
 			<div className={style.sobremi}>
 				<p className={style["titulo-seccion"]}>About us</p>
 				<h2>
-					Hi We are <span>TechMasters</span>
+					Hi We are <span>TechSiteMasters</span>
 				</h2>
 				<h3>FullStacks Developers</h3>
 				<p>
 					Our team of fullstack web developers are proficient in key
 					technologies like HTML, CSS, and JavaScript, working with databases
-					like MySQL, Oracle, and MongoDB. We use frameworks like AngularJS,
-					React, Amber, and EmberJS, fix compatibility issues, and use testing
-					tools like Webpack, Jasmine, and Karma. In addition, we focus on the
+					like PostgresSQL and MongoDB. We use frameworks like ReactJs, Redux, ExpressJs,
+					NodeJS, Bootstrap and Material UI, fix compatibility issues, and use testing
+					tools like Jest and Mocha. In addition, we focus on the
 					usability, accessibility and security of your website. We also
 					specialize in SEO to improve search engine positioning and digital
 					marketing to achieve a greater online presence. We have graphic
@@ -32,7 +32,7 @@ const AboutUs = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nam a
             beatae natus.
         </p> */}
-				<a href="#">Download CV</a>
+				{/* <a href="#">Download CV</a> */}
 			</div>
 		</section>
 	);
