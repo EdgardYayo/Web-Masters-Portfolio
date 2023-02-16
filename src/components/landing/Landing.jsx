@@ -33,7 +33,7 @@ const Landing = () => {
 			<div className={style.contenido}>
 				<header>
 					<div className={style["contenido-header"]}>
-						<h1>/TSM/</h1>
+						<h1>TSM</h1>
 						<nav id={style.nav}>
 							<ul id={style.links}>
 								<li>

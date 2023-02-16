@@ -17,7 +17,7 @@ const AboutUs = () => {
 				<p>
 					Our team of fullstack web developers are proficient in key
 					technologies like HTML, CSS, and JavaScript, working with databases
-					like PostgresSQL and MongoDB. We use frameworks like ReactJS, Redux, Express,
+					like PostgresSQL and MongoDB. We use frameworks like ReactJs, Redux, ExpressJs,
 					NodeJS, Bootstrap and Material UI, fix compatibility issues, and use testing
 					tools like Jest and Mocha. In addition, we focus on the
 					usability, accessibility and security of your website. We also
