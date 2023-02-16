@@ -1,11 +1,12 @@
 import './App.css';
-import Landing from "./components/Landing/Landing";
-import AboutUs from "./components/AboutUs/AboutUs";
-import Services from "./components/Services/Services";
-import Skills from "./components/Skills/Skills";
-import Portfolio from "./components/Portfolio/Portfolio";
-import Contact from "./components/Contact/Contact";
-import Footer from "./components/Footer/Footer";
+
+import Landing from "./components/landing/Landing.jsx"
+import AboutUs from "./components/AboutUs/AboutUs.jsx"
+import Services from "./components/services/Services.jsx"
+import Skills   from "./components/Skills/Skills.jsx"
+import Portfolio from "./components/Portfolio/Portfolio.jsx"
+import Contact from "./components/Contact/Contact.jsx"
+import Footer  from "./components/Footer/Footer.jsx"
 
 
 function App() {
