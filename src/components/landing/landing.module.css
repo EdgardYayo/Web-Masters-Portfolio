@@ -61,6 +61,8 @@ html {
 	color: #ff5080;
 }
 
+
+/* Esto es para resposive */
 #inicio .contenido header .contenido-header .redes a {
 	text-decoration: none;
 	color: #fff;
@@ -73,7 +75,18 @@ html {
 	color: #ff5080;
 }
 
-#inicio .contenido header .contenido-header .seleccionado {
+/*---------------------------*/
+
+
+.seleccionado {
+	color: #FFF;
+	background: transparent;
+	border: none;
+	margin:0 12px;
+	font-size: 18px;
+}
+
+.seleccionado:focus{
 	color: #ff5080;
 }
 

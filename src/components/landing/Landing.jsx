@@ -1,8 +1,34 @@
+
+import React, { useRef } from "react";
 import React from "react";
 import style from "./landing.module.css";
 // import { seleccionar, responsiveMenu } from "../../utilis/Scrips";
 
 const Landing = () => {
+
+	let anchorSt = useRef()
+	let anchorAb = useRef()
+	let anchorSv = useRef()
+	let anchorPf = useRef()
+	let anchorCtc = useRef()
+
+	function handleScroll (ref){
+		if(ref === anchorSt){
+			window.scrollTo(0,0)
+		} else if(ref === anchorAb){
+			window.scrollTo(0,650)
+		}  else if(ref === anchorSv){
+			window.scrollTo(0,1400)
+		}  else if(ref === anchorPf){
+			window.scrollTo(0,2800)
+		}  else if(ref === anchorCtc){
+			window.scrollTo(0,3750)
+		}
+	}
+	
+	
+	
+
 	return (
 		<section id={style.inicio}>
 			<div className={style.contenido}>
@@ -12,33 +38,55 @@ const Landing = () => {
 						<nav id={style.nav}>
 							<ul id={style.links}>
 								<li>
-									<a
-										href="/Landing"
+									<button
 										className={style.seleccionado}
-										
+										id="start"
+										ref={anchorSt}
+										onClick={() => handleScroll(anchorSt)}
 									>
 										START
-									</a>
+									</button>
 								</li>
 								<li>
-									<a href="/AboutUs">
+									<button
+									className={style.seleccionado}
+									id="about"
+									ref={anchorAb}
+									onClick={() => handleScroll(anchorAb)}
+									>
 										ABOUT US
-									</a>
+									</button>
 								</li>
 								<li>
-									<a href="/Services">
+									<button 
+									className={style.seleccionado}
+									id="services"
+									ref={anchorSv}
+									onClick={() => handleScroll(anchorSv)}
+									>
 										SERVICES
-									</a>
+									</button>
 								</li>
 								<li>
-									<a href="/Portfolio">
+									<button
+									className={style.seleccionado}
+									 id="portfolio"
+									ref={anchorPf}
+									onClick={() => handleScroll(anchorPf)}
+
+									>
 										PORTFOLIO
-									</a>
+									</button>
 								</li>
 								<li>
-									<a href="/Contact" >
+									<button
+									className={style.seleccionado}
+									id="contact"
+									ref={anchorCtc}
+									onClick={() => handleScroll(anchorCtc)}
+									>
 										CONTACT
-									</a>
+									</button>
 								</li>
 							</ul>
 						</nav>
