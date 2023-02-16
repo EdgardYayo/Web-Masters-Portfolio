@@ -7,17 +7,20 @@ const Contact = () => {
 			<h3 className={style["titulo-seccion"]}>contact us now</h3>
 			<div className={style["contenedor-form"]}>
 				<form action="">
-					<div className={style.fila.mitad}>
+					<div className={style.formNameEmail}>
+						<div className={style.txtArea1}>
 						<input
 							type="text"
 							placeholder="Nombre Completo *"
-							className={style["input-mitad"]}
+							
 						/>
+						</div>
+						<div className={style.txtArea}>
 						<input
 							type="email"
 							placeholder="Dirección de Email"
-							className={style["input-mitad"]}
 						/>
+						</div>
 					</div>
 					<div className={style.fila}>
 						<input type="text" placeholder="Tema..." className={style["input-full"]} />
@@ -33,7 +36,7 @@ const Contact = () => {
 						></textarea>
 					</div>
 
-					<input type="submit" value="Enviar Mensaje" className={style["btn-enviar"]} />
+					<input type="submit" value="Enviar Mensaje"  className={style.btnSubmit}/>
 				</form>
 			</div>
 		</section>
