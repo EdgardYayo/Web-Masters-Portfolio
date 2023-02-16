@@ -1,5 +1,5 @@
 import './App.css';
-import Landing from "./components/Landing/Landing.jsx"
+import Landing from "./components/landing/Landing.jsx"
 import AboutUs from "./components/AboutUs/AboutUs.jsx"
 import Services from "./components/Services/Services.jsx"
 import Skills   from "./components/Skills/Skills.jsx"
