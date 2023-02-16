@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./Landing.module.css";
+import style from "./landing.module.css";
 // import { seleccionar, responsiveMenu } from "../../utilis/Scrips";
 
 const Landing = () => {
