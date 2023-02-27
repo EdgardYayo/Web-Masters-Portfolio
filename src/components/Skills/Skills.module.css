@@ -22,6 +22,10 @@ html {
 	text-align: center;
 }
 
+.contenedor-skills h3{
+	font-size: 25px;
+}
+
 .contenedor-skills .skill {
 	max-width: 600px;
 	margin: 30px auto;
@@ -38,6 +42,25 @@ html {
 	height: 10px;
 	width: 10px;
 	background-color: #fff;
+}
+
+.ico_container{
+	display: flex;
+	justify-content: space-evenly;
+	cursor: grab;
+	flex-wrap: wrap;
+}
+
+#ico{
+	margin-top: 60px;
+	height: 50px;
+	width: 50px;
+	color: #fff;
+	transition: all ease 0.5s;
+}
+
+#ico:hover{
+	transform: scale(1.5);
 }
 
 .contenedor-skills .skill .barra {
@@ -75,7 +98,7 @@ html {
 	animation: progreso4 2s forwards;
 }
 
-@keyframes progreso1 {
+/* @keyframes progreso1 {
 	0% {
 		width: 0;
 	}
@@ -109,4 +132,4 @@ html {
 	100% {
 		width: 85%;
 	}
-}
+} */
