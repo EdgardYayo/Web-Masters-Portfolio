@@ -28,8 +28,11 @@ html {
 
 #portfolio .fila {
 	display: flex;
-	justify-content: space-between;
-	margin: 30px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 0;
+    align-items: center;
+    gap: 20px;
 }
 
 #portfolio .fila .proyecto {
@@ -41,7 +44,7 @@ html {
 }
 
 #portfolio .fila .proyecto img {
-	width: 100%;
+	width: 350px;
 	height: 100%;
 	filter: grayscale(1);
 	object-fit: cover;
