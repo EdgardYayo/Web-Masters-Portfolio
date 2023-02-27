@@ -2,14 +2,16 @@
 import React, { useRef } from "react";
 import style from "./landing.module.css";
 // import { seleccionar, responsiveMenu } from "../../utilis/Scrips";
+import iconTSM from "../../icons/icon TSM.jpg";
 
 const Landing = () => {
 
 	let anchorSt = useRef()
 	let anchorAb = useRef()
 	let anchorSv = useRef()
-	let anchorPf = useRef()
+	let anchorSk = useRef()
 	let anchorCtc = useRef()
+	let anchorPf = useRef()
 
 	function handleScroll (ref){
 		if(ref === anchorSt){
@@ -18,10 +20,12 @@ const Landing = () => {
 			window.scrollTo(0,650)
 		}  else if(ref === anchorSv){
 			window.scrollTo(0,1400)
-		}  else if(ref === anchorPf){
-			window.scrollTo(0,2800)
+		}  else if(ref === anchorSk){
+			window.scrollTo(0,2250)
 		}  else if(ref === anchorCtc){
 			window.scrollTo(0,3750)
+		} else if(ref === anchorPf){
+			window.scrollTo(0, 2800)
 		}
 	}
 	
@@ -33,7 +37,7 @@ const Landing = () => {
 			<div className={style.contenido}>
 				<header>
 					<div className={style["contenido-header"]}>
-						<h1>TSM</h1>
+						<img onClick={() => handleScroll(anchorSt)} className={style.icon} src={iconTSM}/>
 						<nav id={style.nav}>
 							<ul id={style.links}>
 								<li>
@@ -69,12 +73,12 @@ const Landing = () => {
 								<li>
 									<button
 									className={style.seleccionado}
-									 id="portfolio"
-									ref={anchorPf}
-									onClick={() => handleScroll(anchorPf)}
+									id="portfolio"
+									ref={anchorSk}
+									onClick={() => handleScroll(anchorSk)}
 
 									>
-										PORTFOLIO
+										SKILLS
 									</button>
 								</li>
 								<li>
@@ -97,7 +101,7 @@ const Landing = () => {
 						</div>
 
 						<div className={style.redes}>
-							<a href="#">
+							{/* <a href="#">
 								<i className="fa-brands fa-youtube"></i>
 							</a>
 							<a href="#">
@@ -105,7 +109,7 @@ const Landing = () => {
 							</a>
 							<a href="#">
 								<i className="fa-brands fa-instagram-square"></i>
-							</a>
+							</a> */}
 						</div>
 					</div>
 				</header>
@@ -117,7 +121,11 @@ const Landing = () => {
 					<p className={style.descripcion}>
 						"Your partners for a powerful online presence"
 					</p>
-					<a href="#portfolio">Go to Portfolio</a>
+					<a ref={anchorPf} 
+					href="#portfolio" 
+					onClick={() => handleScroll(anchorPf)}>
+						Go to Portfolio
+					</a>
 				</div>
 			</div>
 		</section>
