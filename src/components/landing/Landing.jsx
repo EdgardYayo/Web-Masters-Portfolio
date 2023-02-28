@@ -23,9 +23,9 @@ const Landing = () => {
 		}  else if(ref === anchorSk){
 			window.scrollTo(0,2250)
 		}  else if(ref === anchorCtc){
-			window.scrollTo(0,3750)
+			window.scrollTo(0,3850)
 		} else if(ref === anchorPf){
-			window.scrollTo(0, 2800)
+			window.scrollTo(0, 2550)
 		}
 	}
 	
